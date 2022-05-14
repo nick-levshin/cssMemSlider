@@ -1,0 +1,18 @@
+[
+  {
+    "image": "./assets/images/company.jpg",
+    "description": "Хорошая компания. И проекты интересные."
+  },
+  {
+    "image": "./assets/images/treasure.jpg",
+    "description": "Хорошая компания. И проекты интересные."
+  },
+  {
+    "image": "./assets/images/window.jpg",
+    "description": "Хорошая компания. И проекты интересные."
+  },
+  {
+    "image": "./assets/images/joey.jpg",
+    "description": "Хорошая компания. И проекты интересные."
+  }
+]
