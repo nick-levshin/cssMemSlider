@@ -50,7 +50,7 @@ export class Slider {
   changeSlide(e) {
     const dot = e.target.hasAttribute('id')
       ? e.target
-      : e.target.closest('.dot');
+      : e.target.closest('.button');
 
     if (dot === this.slider.querySelector('.active')) {
       return;

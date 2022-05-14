@@ -6,4 +6,70 @@ body, pre
   font-size: 20px
   letter-spacing: .06em
   color: #fff
+  background-color: #141414
+  line-height: 130%
 
+.container
+  width: 1280px
+  padding: 0 40px
+  margin: 0 auto
+
+.slider
+  width: 1200px
+  height: 800px
+  margin-top: 60px
+  position: relative
+  overflow: hidden
+
+  &-items
+    transition: left .6s
+    position: relative
+    display: flex
+    left: 0
+
+  &__item
+    width: 1200px
+    &-image
+      width: 1200px
+      height: 700px
+
+    &-text
+      margin-top: 34px
+      height: 60px
+      display: flex
+      align-items: center
+
+  &-dots
+    display: flex
+    align-items: center
+    position: absolute
+    right: 0
+    bottom: 0
+    padding-left: 200px
+    height: 60px
+    background-color: #141414
+
+
+.button
+  padding: 0 5px
+  cursor: pointer
+  &:hover &-circle
+    background-color: #fff
+    border: 2px solid #fff
+  &.active &-circle
+    background-color: transparent
+  &:active &-circle
+    background-color: #ada5a5
+    border: 2px solid #ada5a5
+
+  &-circle
+    transition: .2s
+    height: 13px
+    width: 13px
+    border-radius: 50%
+    background-color: #1a25a1
+    border: 2px solid #1a25a1
+    margin-right: 5px
+
+
+  
