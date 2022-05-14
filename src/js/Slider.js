@@ -29,8 +29,10 @@ export class Slider {
     for (let i = 0; i < array.length; i++) {
       result += `
       <div class="slider__item">
-        <img class="slider__item-image" src="${array[i].image}" alt="${array[i].description}"/>
-        <p class="slider__item-text">${array[i].description}</p>
+        <img class="slider__item-image" src="${array[i].image}" alt="${
+        array[i].description
+      }"/>
+        <p class="slider__item-text">${array[i].description.join('<br/>')}</p>
       </div>
       `;
     }
