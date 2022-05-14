@@ -1,2 +1,2 @@
 GitHub pages:
-https://nick-levshin.github.io/cssMemSlider/cssMemSlider/
+https://nick-levshin.github.io/cssMemSlider/
