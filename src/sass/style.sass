@@ -10,7 +10,7 @@ body
   line-height: 140%
 
 .container
-  max-width: 1280px
+  max-width: 1920px
   padding: 0 40px
   margin: 0 auto
   display: flex
@@ -19,26 +19,28 @@ body
   height: 100vh
 
 .slider
-  width: 1200px
-  height: 800px
+  width: 80%
+  height: 80vh
   position: relative
   overflow: hidden
 
   &-items
     transition: left .6s
     position: relative
-    display: flex
     left: 0
+    display: flex
 
-  &__item
-    width: 1200px
+  &__item   
+    width: 100%
+    flex-shrink: 0
+    height: 80vh
+
     &-image
-      width: 1200px
-      height: 694px
+      height: 65vh
+      width: 100%
 
     &-text
-      margin-top: 20px
-      height: 80px
+      height: 15vh
       display: flex
       align-items: center
 
@@ -47,9 +49,9 @@ body
     align-items: center
     position: absolute
     right: 0
-    bottom: -1px
+    bottom: 0
     padding-left: 200px
-    height: 80px
+    height: 15vh
     background-color: #141414
 
 
@@ -78,51 +80,31 @@ body
   .container
     padding: 0 20px
 
-  .slider
-    width: 730px
-    height: 500px
+@media (max-width: 767px)
+  body
+    font-size: 17px 
 
-    &__item
-      width: 730px
-      &-image
-        width: 730px
-        height: 400px
-
-      &-text
-        margin-top: 10px
-        font-size: 17px
-
-    &-dots
-      bottom: 4px
-      padding-left: 100px
-
-@media (max-width: 767px) 
   .container
     padding: 0 10px
 
   .slider
-    width: 300px
-    max-height: auto
-    height: auto
+    height: 50vh
 
-    &__item
-      width: 300px
+    &__item   
+      height: 30vh
+
       &-image
-        width: 300px
-        height: 200px
+        height: 24.375vh
+        width: 100%
 
       &-text
-        margin-top: 40px
-        font-size: 15px
-        max-width: 300px
-        height: auto
+        margin-top: 5.125vh
+        height: 5.125vh
+        align-items: start
 
     &-dots
-      top: 230px
-      width: 100%
-      right: -75%
-      transform: translate(-50%, -50%)
-      padding: 0
-      height: 40px
+      right: 40%
+      top: 25vh
+      height: 5.125vh
 
 
