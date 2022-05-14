@@ -11,3 +11,11 @@ fetch('./src/js/slides.json').then(async (response) => {
     console.error(e);
   }
 });
+
+window.addEventListener(
+  `resize`,
+  () => {
+    s.restart();
+  },
+  false
+);

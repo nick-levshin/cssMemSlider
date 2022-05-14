@@ -30,7 +30,7 @@ export class Slider {
       result += `
       <div class="slider__item">
         <img class="slider__item-image" src="${array[i].image}" alt="${array[i].description}"/>
-        <pre class="slider__item-text">${array[i].description}</pre>
+        <p class="slider__item-text">${array[i].description}</p>
       </div>
       `;
     }
@@ -66,6 +66,8 @@ export class Slider {
   restart() {
     if (this.items.style.left != 0) {
       this.items.style.left = 0;
+      this.slider.querySelector('.active').classList.remove('active');
+      this.dots[0].classList.add('active');
     }
   }
 }
