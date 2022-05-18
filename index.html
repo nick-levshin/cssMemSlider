@@ -10,17 +10,54 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="slider">
-        <div class="slider-items"></div>
-        <div class="slider-dots"></div>
+    <div class="wrapper">
+      <div class="wrapper_slider">
+        <input type="radio" name="rb" id="rslide1" checked />
+        <input type="radio" name="rb" id="rslide2" />
+        <input type="radio" name="rb" id="rslide3" />
+        <input type="radio" name="rb" id="rslide4" />
+        <div class="slider">
+          <div class="slider_img slider1_img"></div>
+          <div class="slider_img slider2_img"></div>
+          <div class="slider_img slider3_img"></div>
+          <div class="slider_img slider4_img"></div>
+        </div>
+        <div class="text_control">
+          <div class="sliders_text">
+            <div class="slider_text slider_text1">
+              Хорошая компания. И проекты интересные.
+            </div>
+            <div class="slider_text slider_text2">
+              Разработчики мобильных приложений для знакомств.
+            </div>
+            <div class="slider_text slider_text3">
+              Петр I: *открывает окно*<br />Путин: холодно закрой
+            </div>
+            <div class="slider_text slider_text4">
+              Я: *прихожу в химзащите на стажировку*<br />Все остальные в
+              лаборатории:<br />- Чел, у нас "Лаборатория Касперского"
+            </div>
+          </div>
+          <div class="controls">
+            <label class="control control1" for="rslide1">
+              <div class="dot"></div>
+            </label>
+            <label class="control control2" for="rslide2">
+              <div class="dot"></div>
+            </label>
+            <label class="control control3" for="rslide3">
+              <div class="dot"></div>
+            </label>
+            <label class="control control4" for="rslide4">
+              <div class="dot"></div>
+            </label>
+          </div>
+        </div>
       </div>
     </div>
-
-    <script src="./src/js/index.js" type="module"></script>
   </body>
 </html>

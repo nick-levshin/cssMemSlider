@@ -1,0 +1,253 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 120%;
+}
+
+.wrapper {
+  background-color: #141414;
+  width: 67vw;
+  height: 52vw;
+  max-height: 92vh;
+  max-width: 122vh;
+  border-radius: 0.5%;
+  overflow: hidden;
+  margin-top: 5vh;
+  margin-left: 17.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper_slider {
+  width: 65vw;
+  height: 50vw;
+  max-height: 90vh;
+  max-width: 120vh;
+  border-radius: 0.5%;
+  overflow: hidden;
+}
+
+.text_control {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  height: 50%;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.control:hover .dot {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.dot {
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgb(30, 56, 202);
+  background-color: rgb(30, 56, 202);
+}
+
+input[name='rb'] {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  display: block;
+}
+
+.control:active .dot {
+  background-color: rgb(191, 183, 183);
+  border-color: rgb(191, 183, 183);
+}
+
+#rslide1:checked ~ .text_control > .controls > .control1 > .dot {
+  background-color: transparent;
+}
+
+#rslide2:checked ~ .text_control > .controls > .control2 > .dot {
+  background-color: transparent;
+}
+
+#rslide3:checked ~ .text_control > .controls > .control3 > .dot {
+  background-color: transparent;
+}
+
+#rslide4:checked ~ .text_control > .controls > .control4 > .dot {
+  background-color: transparent;
+}
+
+.slider {
+  width: 400%;
+  height: 70%;
+  display: flex;
+}
+
+.sliders_text {
+  font-weight: 700;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 65%;
+  overflow: hidden;
+}
+
+.slider_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.slider1_img {
+  background-image: url(../assets/images/company.jpg);
+}
+
+.slider2_img {
+  background-image: url(../assets/images/treasure.jpg);
+}
+
+.slider3_img {
+  background-image: url(../assets/images/window.jpg);
+}
+
+.slider4_img {
+  background-image: url(../assets/images/joey.jpg);
+}
+
+#rslide1:checked ~ .slider > .slider1_img {
+  margin-left: 0;
+}
+
+#rslide2:checked ~ .slider > .slider1_img {
+  margin-left: -25%;
+}
+
+#rslide3:checked ~ .slider > .slider1_img {
+  margin-left: -50%;
+}
+
+#rslide4:checked ~ .slider > .slider1_img {
+  margin-left: -75%;
+}
+
+.slider_text {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+
+#rslide1:checked ~ .text_control > .sliders_text > .slider_text1 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+
+#rslide2:checked ~ .text_control > .sliders_text > .slider_text2 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+
+#rslide3:checked ~ .text_control > .sliders_text > .slider_text3 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+
+#rslide4:checked ~ .text_control > .sliders_text > .slider_text4 {
+  width: 100%;
+  height: 100%;
+  font-size: 1.4vw;
+}
+
+@media (max-width: 390px) {
+  .wrapper {
+    height: 55vh;
+    width: 90vw;
+    margin-top: 20vh;
+    margin-left: 5vw;
+  }
+
+  .wrapper_slider {
+    height: 55vh;
+    width: 84vw;
+  }
+
+  .text_control {
+    flex-direction: column-reverse;
+    height: 30%;
+    margin-top: 2%;
+  }
+
+  .sliders_text {
+    width: 100%;
+    height: 60%;
+  }
+
+  #rslide1:checked ~ .text_control > .sliders_text > .slider_text1 {
+    width: 100%;
+    height: 100%;
+    font-size: 3.1vw;
+  }
+
+  #rslide2:checked ~ .text_control > .sliders_text > .slider_text2 {
+    width: 100%;
+    height: 100%;
+    font-size: 3.1vw;
+  }
+
+  #rslide3:checked ~ .text_control > .sliders_text > .slider_text3 {
+    width: 100%;
+    height: 100%;
+    font-size: 3.1vw;
+  }
+
+  #rslide4:checked ~ .text_control > .sliders_text > .slider_text4 {
+    width: 100%;
+    height: 100%;
+    font-size: 3.1vw;
+  }
+
+  .slider {
+    height: 43%;
+  }
+
+  .controls {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 2%;
+  }
+
+  .control {
+    border-top: 1.3vh;
+    border-bottom: 1.3vh;
+  }
+}
